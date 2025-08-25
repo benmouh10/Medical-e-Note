@@ -10,7 +10,10 @@ const helmet = require('helmet');
 app.use(helmet());
 
 const corsOptions = {
-  origin: ['https://ton-front.example.com'], // ou ['http://localhost:3000'] en dev
+  origin: [
+    'https://ton-front.example.com',
+    'https://flutlab.io'
+  ], // ou ['http://localhost:3000'] en dev
   methods: ['GET','POST','PUT','DELETE'],
   credentials: true
 };
